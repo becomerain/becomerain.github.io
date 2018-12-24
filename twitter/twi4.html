@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            height: 3000px;
+            box-sizing: border-box;
+        }
+
+        * {
+            font-family: 微軟正黑體;
+        }
+
+        .bar {
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            background-color: white;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+            z-index: 99;
+        }
+
+        .container {
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        .fa-twitter {
+            color: c;
+            margin-right: 10px;
+            color:deepskyblue;
+        }
+
+        .left {
+            float: left;
+            line-height: 50px;
+        }
+        
+        .right {
+            float: right;
+            line-height: 50px;
+        }
+
+        .login {
+            margin-right: 20px;
+            font-weight: 400;
+            text-decoration: none;
+            color: grey;
+        }
+        .login:hover{
+            text-decoration: underline;
+        }
+
+        .home{
+            color: rgb(117, 117, 117) ;
+            float: left;
+            height: 46px;
+            width: 80px;
+            text-align: center;
+            font-weight: 900;
+        }
+        .home:hover{
+            color: deepskyblue;
+            border-bottom: 5px solid deepskyblue;
+        }
+
+
+        .clearfix {
+            clear: both;
+        }
+
+        #search {
+            background-color: rgb(243, 243, 243);
+            display: inline-block;
+            border: solid 1px rgb(223, 223, 223);
+            width: 180px;
+            height: 20px;
+            border-radius: 20px;
+            padding: 3px;
+            margin-right: 10px;
+            color: gray;
+            outline: none;
+            transition: 0.3s;
+        }
+        #search:focus{
+            outline: none;
+            border: solid 2px rgb(255, 135, 56);
+            
+        }
+        .bottom{
+            position: sticky;
+            top: -370px;
+        }
+        .pic {
+            padding-top: 50px;
+            margin: 0;
+            background-color: black;
+            background-image: url(1500x500.jpg);
+            background-attachment: fixed;
+            height: calc(100vh - 200px);
+            overflow: hidden;
+        }
+
+        .bar2 {
+            background-color: white;
+            height: 65px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        .container2 {
+            position: relative;
+            width: 1140px;
+            margin: 0 auto;
+            font-weight: 900;
+            font-size: 15px;
+        }
+
+        .pic2 {
+            border: solid 6px white;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            border-radius: 50%;
+            overflow: hidden;
+            top: -70px;
+        }
+        .pic2 img{
+            max-width: 200px;
+            height: auto;
+        }
+
+        .cont {
+            position: absolute;
+            left: 250px;
+        }
+
+        .bu {
+            width: 80px;
+            float:left;
+            color: dimgrey;
+            padding:9px;
+            text-align: center;
+            line-height: 22px;
+            font-size: 14px;
+            font-weight: 900;
+            
+        }
+        .bu:hover{
+            border-bottom: 5px solid rgb(255, 135, 56);
+        }
+
+        .follow {
+            width: 100px;
+            height: 30px;
+            border: solid 2px rgb(255, 135, 56);
+            border-radius: 20px;
+            color: rgb(255, 135, 56);
+            float: right;
+            margin: 10px;
+            text-align: center;
+            padding-top: 5px;
+        }
+        .follow:hover{
+            background-color: rgb(255, 236, 224);
+        }
+
+        .bu_big{
+            font-size: 18px;
+        }
+        p{
+            font-size: 24px;
+            font-weight: 900;
+            float:right;
+            margin-right:150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bar">
+        <div class="container">
+            <div class="left">
+                <a href="http://">
+                    <div class="home"><i class="fab fa-twitter"></i>首頁</div>
+                </a>
+                <a href="http://">
+                    <div class="home">關於</div>
+                </a>
+            </div>
+
+            <div class="right">
+                <input type="text" name="" id="search" placeholder=" 搜尋Twitter">
+                <a href="http://" class=login><span>已經擁有帳戶？ <b>登入</b></span></a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <div class="pic"></div>
+        <div class="bar2">
+            <div class="container2">
+                <div class="pic2"><img src="s6pWdDPJ_400x400.jpg" alt=""></div>
+                <div class="cont">
+                    <a href="http://">
+                        <div class="bu"><span>推文</span><br><span class=bu_big>8,587</span></div>
+                    </a>
+                    <a href="http://">
+                        <div class="bu">
+                            <span>正在跟隨</span><br><span class=bu_big>2,470</span>
+                        </div>
+                    </a>
+                    <a href="http://">
+                        <div class="bu">
+                            <span>跟隨者</span><br><span class=bu_big>4.26萬</span>
+                        </div>
+                    </a>
+                    <a href="http://">
+                        <div class="bu">
+                            <span>喜歡的內容</span><br><span class=bu_big>1.7萬</span>
+                        </div>
+                    </a>
+                </div><a href="http://">
+                    <div class="follow">跟隨</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <p>19廖昱婷</p>
+</body>
+
+</html>
