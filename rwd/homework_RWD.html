@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prometheus | 20th Century FOX</title>
+    <link href="https://fonts.googleapis.com/css?family=Prompt:400,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            background-color: black;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container1 {
+            width: 1200px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+
+        .toptop {
+            height: 120px;
+            background-color: black;
+        }
+
+        .top {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 90px);
+            background-color: black;
+        }
+
+        .toptext {
+            position: relative;
+            top: 100px;
+            height: 80px;
+            width: 200px;
+        }
+
+        .toptext1 {
+            position: absolute;
+            font-family: 'Prompt';
+            font-size: 32px;
+            letter-spacing: 8px;
+            top: 0px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .toptext2 {
+            font-family: 'Prompt';
+            letter-spacing: 8px;
+            position: absolute;
+            top: 40px;
+            font-size: 28px;
+            font-weight: 100;
+            color: rgb(194, 194, 194);
+        }
+
+        .title {
+            position: absolute;
+            margin-top: 300px;
+            font-family: 'Prompt';
+            font-size: 120px;
+            font-weight: 500;
+            letter-spacing: 45px;
+            color: white;
+            transform: scaley(0.8);
+            text-decoration: underline 1px;
+        }
+
+        #top_line {
+            position: absolute;
+        }
+
+        .toppic {
+            margin-top: 60px;
+            width: 1360px;
+            height: 720px;
+            background-color: red;
+            float: right;
+            background-image: url(bg01.gif);
+            background-attachment: fixed;
+
+
+        }
+
+        .bar {
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            height: 90px;
+            background-color: black;
+            color: white;
+            z-index: 9;
+
+        }
+
+        .button1 {
+            font-family: 'Prompt';
+            font-size: 21px;
+            letter-spacing: 4px;
+            font-weight: 500;
+            margin-right: 108px;
+        }
+
+        .button2 {
+            font-family: 'Prompt';
+            font-size: 21px;
+            letter-spacing: 4px;
+            font-weight: 500;
+        }
+
+        .one {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* background-image: url(bg02-04.png); */
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 130%;
+            overflow: hidden;
+        }
+
+        .moviebg{
+            position: absolute;
+            z-index: -99;
+            width: 100vw;
+            height: 100vh;
+            top: -100px;
+
+        }
+
+        .onetext {
+            width: 500px;
+            height: 300px;
+            float: left;
+            margin-top: 540px;
+            font-family: 'Noto Sans'
+        }
+
+        .onetitle {
+            font-size: 40px;
+            font-weight: 900;
+            color: white;
+        }
+
+        .oneintro {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: justify;
+            color: white;
+        }
+
+        .two {
+            width: 100%;
+            height: 972px;
+            background-color: black;
+        }
+
+        .twotop {
+            position: relative;
+            width: 100%;
+            height: 600px;
+        }
+
+        .twobottom {
+            width: 100%;
+            height: 380px;
+        }
+
+        .vid1 {
+            width: 100%;
+            height: 500px;
+            background-color: burlywood;
+            position: absolute;
+            top: 80px;
+        }
+
+        .viddown {
+            float: left;
+            width: 360px;
+            height: 300px;
+            margin-right: 60px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Noto Sans';
+            color: white;
+        }
+
+        .viddown2 {
+            float: right;
+            width: 360px;
+            height: 300px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Noto Sans';
+            color: white;
+        }
+
+        .vid2 {
+            width: 100%;
+            height: 200px;
+            background-image: url(vid01.jpg);
+            background-size: cover;
+            margin-bottom: 10px;
+        }
+
+        .vid3 {
+            width: 100%;
+            height: 200px;
+            background-image: url(vid02.jpg);
+            background-size: cover;
+            margin-bottom: 10px;
+        }
+
+        .vid4 {
+            width: 100%;
+            height: 200px;
+            background-image: url(vid03.jpg);
+            background-size: cover;
+            margin-bottom: 10px;
+        }
+
+        .three {
+            width: 100%;
+            height: 220px;
+            background-color: black;
+            color: white;
+        }
+
+        .threecon {
+            padding-top: 0px;
+        }
+
+        .threetext {
+            float: left;
+            width: 220px;
+        }
+
+        .threetext1 {
+            font-family: 'Prompt';
+            font-size: 40px;
+            letter-spacing: 6px;
+            font-weight: 700;
+        }
+
+        .threetext2 {
+            font-family: 'Noto Sans';
+            font-size: 21px;
+            letter-spacing: 3px;
+            font-weight: 500;
+        }
+
+        .threeblock {
+            float: right;
+            margin-left: 20px;
+            width: 220px;
+            height: 80px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #buy1 {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(microsoft.png)
+        }
+
+        #buy2 {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(amazon.png)
+        }
+
+        #buy3 {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(google.png)
+        }
+
+        #buy4 {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(itunes.png)
+        }
+
+        .four {
+            width: 100%;
+            height: 600px;
+            background-color: red;
+            font-family: 'Noto Sans'
+        }
+
+        .leftintro {
+            width: 510px;
+            height: 200px;
+            float: right;
+            margin-right: 90px;
+            margin-top: 300px;
+        }
+
+        .introtitle {
+            font-size: 40px;
+            font-weight: 900;
+            color: white;
+        }
+
+        .intro1 {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: justify;
+            color: white;
+        }
+
+        .rightintro {
+            width: 510px;
+            height: 200px;
+            margin-left: 90px;
+            margin-top: 300px;
+        }
+
+        .introtitle2 {
+            font-size: 40px;
+            font-weight: 900;
+            color: white;
+        }
+
+        .intro2 {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: justify;
+            color: white;
+        }
+
+        .fourleft {
+            float: left;
+            width: 50%;
+            height: 100%;
+            background-image: url(bg-05.png);
+            background-position: right top;
+            background-size: 100% 100%;
+            transition-duration: 1s;
+        }
+
+        .fourleft:hover {
+            background-size: 120% 120%
+        }
+
+        .fourright {
+            float: left;
+            width: 50%;
+            height: 100%;
+            transition: 1s;
+            background-image: url(bg-06.png);
+            background-size: 100% 100%
+        }
+
+        .fourright:hover {
+            background-size: 120% 120%
+        }
+
+        .footer {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(26, 26, 26);
+        }
+
+        .foot {
+            font-family: 'Noto Sans';
+            font-size: 16px;
+            color: rgb(141, 128, 128);
+            letter-spacing: 4px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toptop"></div>
+    <div class="top">
+        <div class="toppic"></div>
+        <div class="container">
+            <div class="toptext"><span class="toptext1">ALIEN</span><br>
+                <span class="toptext2">UNIVERSE</span></div>
+            <div class="title">
+                <span id="titletext">PROMETHEUS</span></div>
+            <hr id="top_line">
+        </div>
+
+
+    </div>
+    <div class="bar">
+        <div class="container1">
+            <div class="button">
+                <span class="button1">STORY</span>
+                <span class="button1">DIRETOR</span>
+                <span class="button1">VIDEO</span>
+                <span class="button1">DIGITAL RETAILER</span>
+                <span class="button2">ALIEN UNIVERSE</span>
+            </div>
+        </div>
+    </div>
+    <div class="one">
+        <div class="moviebg">
+                <iframe width="130%" height="130%" src="https://www.youtube.com/embed/R5j1Y8EGWnc?autoplay=1&controls=0&showinfo=0&autohide=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <div class="container">
+            <div class="onetext">
+                <div class="onetitle">PROMETHEUS(2012)</div>
+                <div class="oneintro">A team of scientists and explorers travels to the darkest corners of the
+                    universe
+                    searching for the origins of human life. Instead they find a dark, twisted world that hides a
+                    terrifying threat capable of destroying them...and all mankind.</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="two">
+            <div class="twotop">
+                <div class="vid1"><iframe width="1200" height="505" src="https://www.youtube.com/embed/sftuxbvGwiU"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+            </div>
+            <div class="twobottom">
+                <div class="viddown">
+                    <a href="https://www.youtube.com/watch?v=pyz9ktII0dM">
+                        <div class="vid2"></div>
+                    </a>
+                    <span class="vidtext">Prometheus | Official US Trailer</span>
+                </div>
+                <div class="viddown">
+                    <a href="https://www.youtube.com/watch?v=xg2OHwo31VE&">
+                        <div class="vid3"></div>
+                    </a>
+                    <span class="vidtext">Prometheus on Blu-ray</span>
+                </div>
+                <div class="viddown2">
+                    <a href="https://www.youtube.com/watch?v=cJMIzdf1eo8">
+                        <div class="vid4"></div>
+                    </a>
+                    <span class="vidtext">PROMETHEUS Trailer</span>
+                </div>
+            </div>
+        </div>
+        <div class="three">
+            <div class="threecon">
+                <div class="threetext">
+                    <span class="threetext1">DIGITAL</span><br>
+                    <span class="threetext2">Select Retailer</span>
+                </div>
+                <a href="http://">
+                    <div class="threeblock" id="buy1"></div>
+                </a>
+                <a href="http://">
+                    <div class="threeblock" id="buy2"></div>
+                </a>
+                <a href="http://">
+                    <div class="threeblock" id="buy3"></div>
+                </a>
+                <a href="http://">
+                    <div class="threeblock" id="buy4"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="four">
+        <a href="http://">
+            <div class="fourleft">
+                <div class="leftintro">
+                    <div class="introtitle">Alien</div>
+                    <div class="intro1">The time is the future. The crew aboard a massive commercial space vehicle is
+                        enroute to earth with a load of extraterrestrial ore when they are sidetracked by mysterious
+                        signals from a nearby planet.</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="http://">
+            <div class="fourright">
+                <div class="rightintro">
+                    <div class="introtitle2">Alien: Covenant</div>
+                    <div class="intro2">The crew of the colony ship Covenant, bound for a remote planet on the far side
+                        of
+                        the galaxy, when they uncover a threat beyond their imagination they must attempt a harrowing
+                        escape.</div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="four">
+            <a href="http://">
+                <div class="fourleft">
+                    <div class="leftintro">
+                        <div class="introtitle">Alien</div>
+                        <div class="intro1">The time is the future. The crew aboard a massive commercial space vehicle is
+                            enroute to earth with a load of extraterrestrial ore when they are sidetracked by mysterious
+                            signals from a nearby planet.</div>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="http://">
+                <div class="fourright">
+                    <div class="rightintro">
+                        <div class="introtitle2">Alien: Covenant</div>
+                        <div class="intro2">The crew of the colony ship Covenant, bound for a remote planet on the far side
+                            of
+                            the galaxy, when they uncover a threat beyond their imagination they must attempt a harrowing
+                            escape.</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+    <div class="footer">
+        <div class="foot">Prometheus | Official US Trailer | 20th Century FOX</div>
+    </div>
+</body>
+
+</html>
