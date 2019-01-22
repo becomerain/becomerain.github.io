@@ -1,0 +1,547 @@
+body {
+    margin: 0;
+    background-color: #242424;
+    cursor: crosshair;
+
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.head {
+    height: 930px;
+    background-color: grey;
+
+}
+
+.clearfix{
+    clear: both;
+    height: 510px;
+}
+
+/* 現正放映 */
+
+.now1 .vid {
+    height: 750px;
+    position: relative;
+}
+
+.nowplayvid {
+    position: absolute;
+    background-color: gray;
+    width: 1170px;
+    height: 500px;
+    top: 90px;
+    z-index: -9;
+    border: solid white 7px;
+    box-sizing: border-box;
+}
+
+.nowplaytexttop {
+    color: white;
+    font-size: 100px;
+    letter-spacing: 74.8px;
+    margin-top: 110px;
+}
+
+.nowplaytextbottom {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 59px;
+    margin-top: 460px;
+}
+
+.vidintro{
+    color: white;
+    height: 600px;
+    border: solid white 1px;
+}
+
+.vidintrotitle{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.vidactorall{
+    display: inline-block;
+}
+
+.vidintroall{
+    float: right;
+
+}
+
+.vidintrotext{
+    width: 360px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 26px;
+}
+
+.actortitle{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.actorintro{
+    line-height: 24px;
+    letter-spacing: 0.7px;
+}
+
+
+
+/* 放映時間 */
+.sche {
+    height: 800px;
+    background-color: #242424;
+    background-image: url(https://stmed.net/sites/default/files/yellow-wallpapers-25359-3284112.jpg);
+    background-repeat: no-repeat;
+    background-size: 1220px 500px;
+    background-position-y: 200px;
+}
+
+.filmtitle {
+    color: white;
+    font-size: 120px;
+    padding-top: 40px;
+    display: inline-block;
+}
+
+.filmright {
+    float: right;
+    margin-top: 90px;
+    width: 325px;
+    height: 610px;
+}
+
+.filmdate {
+    border: solid 1px white;
+    width: 225px;
+    height: 56px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 45px;
+}
+
+.filmtime {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-left: 45px;
+    margin-top: 40px;
+    line-height: 40px;
+
+}
+
+.filmtime p {
+    display: inline-block;
+    margin: 0;
+}
+
+.filmtime hr {
+
+    width: 30%;
+    display: inline-block;
+    top: 15px;
+}
+
+.filmname {
+    font-size: 80px;
+    color: white;
+    margin-left: 45px;
+    margin-top: 100px;
+    letter-spacing: 4px;
+}
+
+/* 票券購買 */
+
+.ticket {
+    position: relative;
+    background-color: #242424;
+    height: 900px;
+}
+
+.ticketdeco {
+    position: absolute;
+    top: 95px;
+    left: 290px;
+    margin: 0px;
+    color: white;
+    transform: rotate(90deg);
+    letter-spacing: 20px;
+    font-size: 11px;
+    z-index: 3;
+}
+
+.ticketright {
+    left: -20px;
+    margin-top: 100px;
+    display: inline-block;
+}
+
+.ticketdecocircle {
+    position: relative;
+    width: 520px;
+    height: 520px;
+    background-color: #355449;
+    border-radius: 260px;
+
+    display: inline-block;
+}
+
+.tickettitle {
+    position: absolute;
+    right: -30px;
+    font-size: 180px;
+    color: white;
+    text-align: center;
+    line-height: 480px;
+}
+
+.ticketintro {
+    width: 540px;
+    height: 480px;
+    float: right;
+    display: inline-block;
+    margin-top: 270px;
+}
+
+.ticketdetailtitle {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.ticketdetailintro {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 110px;
+    display: inline-block;
+}
+
+.ticketdetail .button {
+    float: right;
+    color: white;
+    border: solid 1px white;
+    width: 210px;
+    height: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+
+}
+
+/* 交通方式 */
+.location {
+    position: relative;
+    height: 1100px;
+
+}
+
+.map {
+    width: 1420px;
+    height: 1080px;
+    background-color: black;
+    display: inline-block;
+
+}
+
+.locationdeco {
+    width: 400px;
+}
+
+.locationintro {
+    position: absolute;
+    width: 1095px;
+    height: 360px;
+    background-color: #242424;
+    z-index: 5;
+    display: inline-block;
+    top: 360px;
+    right: 0;
+
+}
+
+.locationtitle {
+    margin-left: 290px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 100px;
+    color: white;
+}
+
+.locationtext {
+    width: 580px;
+    font-size: 21px;
+    color: white;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+    text-align: right;
+    margin-left: 90px;
+    opacity: 0.6;
+}
+
+.locationdeco {
+    color: white;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 210px;
+    right: 250px;
+    letter-spacing: 26px;
+    font-size: 12px;
+    display: inline;
+}
+
+/* 關於我們 */
+.introduction {
+    position: relative;
+    height: 1500px;
+    transform: translatey(-200px);
+    overflow: hidden;
+    z-index: -9;
+}
+
+.introductiontitle {
+    color: white;
+    font-size: 160px;
+    margin-left: 120px;
+    margin-top: 300px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.introductiontext {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 120px;
+    margin-right: 180px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+}
+
+.decobigcircle {
+    position: absolute;
+    width: 1300px;
+    height: 1300px;
+    border-radius: 650px;
+    background-color: #B3B3B3;
+    z-index: -10;
+    top: 0px;
+    right: -100px;
+}
+
+.decosmallcircle {
+    position: absolute;
+    height: 860px;
+    width: 860px;
+    border-radius: 430px;
+    background-color: #355449;
+    left: 210px;
+    top: 600px;
+    z-index: -11;
+}
+
+.introdeco {
+    width: 1700px;
+    overflow: hidden;
+    position: absolute;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 40px;
+    transform: rotate(90deg);
+    z-index: -30;
+    top: -460px;
+    left: -500px;
+}
+
+.news {
+    position: relative;
+    height: 340px;
+    transform: translatey(-200px);
+}
+
+.newscolor {
+    position: absolute;
+    background-color: #666666;
+    height: 130px;
+    width: 920px;
+    top: 150px;
+    z-index: -99;
+
+}
+
+.newstitle {
+    color: white;
+    font-size: 174px;
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 38px;
+}
+
+.buttons {
+    position: absolute;
+    display: inline-block;
+    margin-left: 110px;
+    top: 92px;
+}
+
+.newsbutton {
+    font-size: 63px;
+    color: rgb(117, 117, 117);
+    margin-bottom: 11px;
+}
+
+.rent {
+    height: 380px;
+    background-color: #333333;
+    padding-top: 70px;
+
+    transform: translateY(-100px)
+}
+
+.renttitle {
+    color: white;
+    font-size: 90px;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-right: 160px;
+}
+
+.rentintro {
+    color: white;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+    margin-right: 160px;
+    text-align: right;
+
+}
+
+.rentbutton {
+    color: white;
+    width: 225px;
+    height: 60px;
+    border: solid white 1px;
+    font-size: 22px;
+    line-height: 57px;
+    text-align: center;
+    float: right;
+    margin-right: 160px;
+
+}
+
+/* 下期播映 */
+.soon {
+    height: 720px;
+}
+
+.soonone {}
+
+.soonvid {
+    position: relative;
+    height: 750px;
+}
+
+.soonvideo {
+    position: absolute;
+    background-color: gray;
+    width: 1170px;
+    height: 500px;
+    top: 90px;
+    z-index: -9;
+    border: solid white 7px;
+    box-sizing: border-box;
+}
+
+.soonvidtext {
+    color: white;
+    font-size: 100px;
+    letter-spacing: 71.3px;
+}
+
+.soonvidtext1 {
+    color: white;
+    font-size: 100px;
+    letter-spacing: 71.3px;
+    margin-top: 110px;
+}
+
+.soonintro {
+    border: solid 1px white;
+    height: 800px;
+    color: white;
+
+}
+
+.soonintrotitle {
+    font-size: 60px;
+    line-height: 80px;
+    margin-top: 160px;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+.soonintrotext {
+    font-size: 20px;
+    width: 320px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.soonintroactors {
+    float: right;
+    text-align: right;
+    margin-top: 150px;
+    display: inline-block;
+    line-height: 24px
+}
+
+.startitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* 頁尾 */
+.footer{
+    height: 320px;
+    background-color: red;
+}
+.footer .logo{
+    width: 340px;
+    height: 75px;
+    background-color: black;
+    display: inline-block;
+    margin-bottom: 75px;
+}
+
+.sitemap{
+    margin-top: 75px;
+    width: 270px;
+    height: 150px;
+    background-color: black;
+    margin-left: 120px;
+    display: inline-block
+}
+
+.info{
+    width: 315px;
+    height: 150px;
+    background-color: yellow;
+    margin-left: 110px;
+    display: inline-block
+}
